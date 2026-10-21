@@ -1,3 +1,5 @@
+import os
+import random
 import random
 
 import pytest
@@ -31,6 +33,11 @@ class TestFlakyCalc:
         if random.random() < 0.4:
             raise AssertionError("flaky: simulated stale divisor cache")
         assert divide(9, 3) == 3
+
+    def test_flaky_fails_on_first_attempt_only(self):
+        if os.environ.get("GITHUB_RUN_ATTEMPT") == "1":
+            raise AssertionError("flaky: simulated first-attempt failure (GITHUB_RUN_ATTEMPT=1)")
+        assert add(1, 1) == 2
 
     def test_flaky_parity_under_race(self):
         if random.random() < 0.4:
