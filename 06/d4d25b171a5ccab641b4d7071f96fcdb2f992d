@@ -1,0 +1,32 @@
+.github/workflows/broken.yml
+  h_75d26f28339534 1-19
+.github/workflows/tests.yml
+  h_75d26f28339534 1-19
+.gitignore
+  h_75d26f28339534 1-3
+README.md
+  h_75d26f28339534 1-12
+broken_tests/test_broken.py
+  h_75d26f28339534 1-2
+requirements.txt
+  h_75d26f28339534 1
+src/__init__.py
+  h_75d26f28339534 1-3
+src/calc.py
+  h_75d26f28339534 1-12
+tests/__init__.py
+  h_75d26f28339534 1
+tests/test_calc.py
+  h_75d26f28339534 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "06d4d25b171a5ccab641b4d7071f96fcdb2f992d",
+  "prompts": {},
+  "humans": {
+    "h_75d26f28339534": {
+      "author": "Shayki Abramczyk <shayki5@gmail.com>"
+    }
+  }
+}
